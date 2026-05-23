@@ -30,7 +30,7 @@
   .metric-label{font-size:.75rem;color:#6b7280;margin-bottom:.25rem;}
   .metric-value{font-size:1.5rem;font-weight:700;color:#db2777;}
 </style>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"このサービスは無料ですか？","acceptedAnswer":{"@type":"Answer","text":"はい、完全無料・登録不要でご利用いただけます。"}},{"@type":"Question","name":"入力データはどこに保存されますか？","acceptedAnswer":{"@type":"Answer","text":"お使いのデバイス内にのみ保存されます。外部送信は行いません。"}},{"@type":"Question","name":"結果はどのくらい正確ですか？","acceptedAnswer":{"@type":"Answer","text":"あくまで参考情報です。重要な判断の際は専門家にご相談ください。"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"このサービスは無料ですか？","acceptedAnswer":{"@type":"Answer","text":"はい、完全無料・登録不要でご利用いただけます。"}},{"@type":"Question","name":"入力データはどこに保存されますか？","acceptedAnswer":{"@type":"Answer","text":"お使いのデバイス内にのみ保存されます。外部送信は行いません。"}},{"@type":"Question","name":"結果はどのくらい正確ですか？","acceptedAnswer":{"@type":"Answer","text":"あくまで参考情報です。重要な判断の際は専門家にご相談ください。"}},{"@type":"Question","name":"どのような人が使っていますか？","acceptedAnswer":{"@type":"Answer","text":"初心者から専門家まで、多くの方にご利用いただいています。特に決断が必要な場面で活躍します。"}},{"@type":"Question","name":"結果をシェアできますか？","acceptedAnswer":{"@type":"Answer","text":"はい、診断結果はスクリーンショットやURLで友人・家族とシェアできます。"}},{"@type":"Question","name":"有料プランはありますか？","acceptedAnswer":{"@type":"Answer","text":"いいえ、すべての機能を完全無料でご利用いただけます。"}}]}</script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -72,10 +72,10 @@
 <meta name="twitter:image" content="https://appadaycreator.com/twitter-card.png">
 <meta name="twitter:site" content="@appadaycreator">
 </head>
-<body class="font-sans">
+<body class="font-sans"><a href="#main" class="sr-only">本文へスキップ</a>
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TXQGZRF9" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-<div class="max-w-lg mx-auto px-4 py-10">
+<div role="main" id="main" class="max-w-lg mx-auto px-4 py-10">
   <div class="text-center mb-8">
     <div class="text-6xl mb-4">🤱</div>
     <h1 class="text-2xl font-bold text-gray-800 mb-2">妊娠・出産費用シミュレーター</h1>
@@ -111,11 +111,11 @@
       </div>
       <div>
         <label>ベビーグッズ・育児用品への予算（万円）</label>
-        <input type="number" id="baby-goods" class="input-field" placeholder="例: 20" min="0" value="20">
+        <input type="number" id="baby-goods" class="input-field" placeholder="例: 20" min="0" value="20" aria-label="例: 20">
       </div>
       <div>
         <label>産後の保育・育児サポート費用（月額・万円）</label>
-        <input type="number" id="childcare-monthly" class="input-field" placeholder="例: 5（産後6ヶ月で計算）" min="0" step="0.5" value="5">
+        <input type="number" id="childcare-monthly" class="input-field" placeholder="例: 5（産後6ヶ月で計算）" min="0" step="0.5" value="5" aria-label="例: 5（産後6ヶ月で計算）">
       </div>
     </div>
     <button class="btn-primary mt-5" onclick="calculate()">費用を計算する →</button>
