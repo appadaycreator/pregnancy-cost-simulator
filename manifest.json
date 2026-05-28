@@ -4,7 +4,7 @@
   "description": "出産方式・病院・地域から妊娠〜産後までの総費用を無料計算。出産一時金・補助金も考慮。",
   "start_url": "/pregnancy-cost-simulator/",
   "display": "standalone",
-  "background_color": "#f8faf9",
+  "background_color": "#ffffff",
   "theme_color": "#7c3aed",
   "lang": "ja",
   "icons": [
