@@ -11,11 +11,13 @@
 <link rel="manifest" href="/manifest.json">
 <meta name="theme-color" content="#6366F1">
 <meta name="description" content="出産方式・病院・地域から妊娠〜産後までの総費用を無料計算。出産一時金・補助金も考慮。">
-<meta property="og:title" content="妊娠・出産費用シミュレーター | 出産の総費用を無料計算">
+<meta property="og:title" content="出産費用計算【無料】妊娠から産後まで総額いくかかる？">
 <meta property="og:description" content="出産方法・病院タイプから総費用・一時金差額を試算。マタニティ保険の必要性も診断。">
 <meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP" />
 <meta property="og:url" content="https://appadaycreator.com/pregnancy-cost-simulator/">
 <meta property="og:image" content="https://appadaycreator.com/pregnancy-cost-simulator/ogp.png">
+<meta property="og:site_name" content="appadaycreator" />
 <link rel="canonical" href="https://appadaycreator.com/pregnancy-cost-simulator/">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "妊娠・出産費用シミュレーター", "description": "出産にかかる総費用を無料計算", "url": "https://appadaycreator.com/pregnancy-cost-simulator/", "applicationCategory": "HealthApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "JPY"}}</script>
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-TXQGZRF9');</script>
@@ -43,6 +45,16 @@ button, .btn, .btn-primary, .option-btn, [role="button"] { min-height: 48px; min
   body { font-size: 16px; }
   .max-w-lg { padding-left: 1rem; padding-right: 1rem; }
 }
+
+@media print{
+  header,footer,nav,button,.no-print,
+  [class*="share"],[class*="affiliate"],[id*="share"],
+  [id*="affiliate"],[id*="banner"],
+  script,noscript{display:none!important}
+  body{background:#fff!important;color:#000!important;font-size:12pt}
+  [id*="result"],[id*="output"],[id*="advice"],[id*="diagnosis"],[class*="result"]{display:block!important}
+  a[href]::after{content:none!important}
+}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"このサービスは無料ですか？","acceptedAnswer":{"@type":"Answer","text":"はい、完全無料・登録不要でご利用いただけます。"}},{"@type":"Question","name":"入力データはどこに保存されますか？","acceptedAnswer":{"@type":"Answer","text":"お使いのデバイス内にのみ保存されます。外部送信は行いません。"}},{"@type":"Question","name":"結果はどのくらい正確ですか？","acceptedAnswer":{"@type":"Answer","text":"あくまで参考情報です。重要な判断の際は専門家にご相談ください。"}},{"@type":"Question","name":"どのような人が使っていますか？","acceptedAnswer":{"@type":"Answer","text":"初心者から専門家まで、多くの方にご利用いただいています。特に決断が必要な場面で活躍します。"}},{"@type":"Question","name":"結果をシェアできますか？","acceptedAnswer":{"@type":"Answer","text":"はい、診断結果はスクリーンショットやURLで友人・家族とシェアできます。"}},{"@type":"Question","name":"有料プランはありますか？","acceptedAnswer":{"@type":"Answer","text":"いいえ、すべての機能を完全無料でご利用いただけます。"}},{"@type":"Question","name":"計算結果は実際の金融商品に使えますか？","acceptedAnswer":{"@type":"Answer","text":"本ツールは参考情報の提供を目的としており、実際の投資・融資判断には専門家（ファイナンシャルプランナー等）にご相談ください。"}},{"@type":"Question","name":"入力した金額データはどこかに送られますか？","acceptedAnswer":{"@type":"Answer","text":"すべての計算はブラウザ内で完結します。サーバーへのデータ送信は一切行いません。"}}]}</script>
 <script type="application/ld+json">
@@ -61,8 +73,8 @@ button, .btn, .btn-primary, .option-btn, [role="button"] { min-height: 48px; min
   "@type": "WebPage",
   "mainEntity": {
     "@type": "Article",
-    "headline": "診断ツール",
-    "description": "無料の診断ツール。簡単な質問にお答えいただくだけで、最適なアドバイスを提供します。",
+    "headline": "出産費用計算【無料】妊娠から産後まで総額いくかかる？",
+    "description": "出産方式・病院・地域から妊娠〜産後までの総費用を無料計算。出産一時金・補助金も考慮。",
     "datePublished": "2026-05-23",
     "dateModified": "2026-05-23",
     "author": {
@@ -81,7 +93,7 @@ button, .btn, .btn-primary, .option-btn, [role="button"] { min-height: 48px; min
 }
 </script>
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="無料診断ツール">
+<meta name="twitter:title" content="出産費用計算【無料】妊娠から産後まで総額いくかかる？">
 <meta name="twitter:description" content="簡単な質問に答えるだけで、最適なアドバイスを提供します。">
 <meta name="twitter:image" content="https://appadaycreator.com/twitter-card.png">
 <meta name="twitter:site" content="@appadaycreator">
@@ -177,12 +189,12 @@ button, .btn, .btn-primary, .option-btn, [role="button"] { min-height: 48px; min
       <div class="bg-pink-50 border border-pink-200 rounded-xl p-4">
         <div class="font-bold text-pink-800 mb-1">マタニティ・育児グッズをAmazonでまとめ購入</div>
         <p class="text-xs text-gray-600 mb-3">ベビーカー・抱っこ紐・授乳グッズなど人気商品を一括チェック。定期おトク便でお得に。</p>
-        <a href="https://www.amazon.co.jp/s?k=ベビーグッズ+マタニティ&tag=appadaycrea0f-22" target="_blank" rel="noopener" class="block text-center bg-yellow-400 text-gray-900 font-bold py-3 rounded-lg text-sm hover:bg-yellow-500 transition">Amazonでベビーグッズを探す →</a>
+        <a href="https://www.amazon.co.jp/s?k=ベビーグッズ+マタニティ&tag=appadaycrea0f-22" target="_blank" rel="noopener" class="block text-center bg-yellow-400 text-gray-900 font-bold py-3 rounded-lg text-sm hover:bg-yellow-500 transition js-track-affiliate" data-platform="Amazon" data-item-name="ベビーグッズマタニティ" data-link-type="affiliate_link">Amazonでベビーグッズを探す →</a>
       </div>
       <div class="bg-pink-50 border border-pink-200 rounded-xl p-4">
         <div class="font-bold text-pink-800 mb-1">マタニティ保険・医療保険の見直し</div>
         <p class="text-xs text-gray-600 mb-3">帝王切開・トラブル時の医療費に備える。妊娠前加入なら保障される保険を比較。</p>
-        <a href="https://px.a8.net/svt/ejp?a8mat=4B3WJ8+9A2HPM+3PXO+5ZMCI" rel="nofollow" target="_blank" class="block text-center bg-pink-500 text-white font-bold py-3 rounded-lg text-sm hover:bg-pink-600 transition">妊活中のご夫婦に選ばれる100%天然成分【ベイビーサポート】 →</a>
+        <a href="https://px.a8.net/svt/ejp?a8mat=4B3WJ8+9A2HPM+3PXO+5ZMCI" rel="nofollow noopener noreferrer" target="_blank" class="block text-center bg-pink-500 text-white font-bold py-3 rounded-lg text-sm hover:bg-pink-600 transition">妊活中のご夫婦に選ばれる100%天然成分【ベイビーサポート】 →</a>
         <img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=4B3WJ8+9A2HPM+3PXO+5ZMCI" alt="" loading="lazy">
       </div>
     </div>
