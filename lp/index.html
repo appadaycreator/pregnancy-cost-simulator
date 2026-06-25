@@ -227,6 +227,22 @@ footer{background:var(--green-dark);color:rgba(255,255,255,.8);padding:40px 24px
   .section{padding:48px 16px;}
   .hero-inner{padding:48px 16px;}
 }
+
+/* ===== COMPARISON TABLE ===== */
+.cmp-table-wrap{overflow-x:auto;margin-top:40px;border-radius:var(--radius);box-shadow:0 4px 24px rgba(0,0,0,.1);}
+.cmp-table{width:100%;border-collapse:collapse;min-width:520px;}
+.cmp-table thead th{background:var(--green);color:#fff;padding:16px 20px;font-size:.88rem;font-weight:800;text-align:center;border-right:1px solid rgba(255,255,255,.15);}
+.cmp-table thead th:first-child{background:var(--green-dark);text-align:left;border-right:1px solid rgba(255,255,255,.2);}
+.cmp-table tbody td{padding:14px 20px;text-align:center;border-bottom:1px solid #EEF0EE;font-size:.86rem;color:var(--text-sub);background:#fff;border-right:1px solid #F0F0F0;}
+.cmp-table tbody td:first-child{text-align:left;font-weight:700;color:var(--text);background:#F8FBF8;border-right:1px solid #E0E8E0;}
+.cmp-table tbody tr:last-child td{border-bottom:none;background:var(--green-bg);}
+.cmp-table tbody tr:last-child td:first-child{background:#E8F5E9;}
+.cmp-badge2{display:inline-flex;align-items:center;gap:5px;padding:5px 14px;border-radius:20px;font-size:.82rem;font-weight:800;}
+.badge-n{background:rgba(255,255,255,.18);}
+.badge-p{background:rgba(255,107,157,.25);}
+.badge-c{background:rgba(76,175,80,.22);}
+.cmp-hl{font-weight:900;color:var(--green);font-size:1rem;}
+.cmp-cta{text-align:center;margin-top:32px;}
 </style>
 </head>
 <body>
@@ -404,6 +420,66 @@ footer{background:var(--green-dark);color:rgba(255,255,255,.8);padding:40px 24px
       <img src="../assets/photos/photo_13.jpg" alt="赤ちゃんグッズ">
       <img src="../assets/photos/photo_14.jpg" alt="家族">
       <img src="../assets/photos/photo_15.jpg" alt="育児">
+    </div>
+  </div>
+</section>
+
+<!-- ===== COMPARISON TABLE ===== -->
+<section class="section bg-gray">
+  <div class="section-inner">
+    <div class="section-header-center">
+      <span class="section-label">費用比較</span>
+      <h2 class="section-title center">分娩方法で<br>費用はこんなに違う</h2>
+      <div class="divider"></div>
+      <p class="section-sub">3パターンの自己負担額（出産育児一時金50万円・自治体補助金5万円差し引き後の目安）</p>
+    </div>
+    <div class="cmp-table-wrap">
+      <table class="cmp-table">
+        <thead>
+          <tr>
+            <th>比較項目</th>
+            <th><span class="cmp-badge2 badge-n">自然分娩</span></th>
+            <th><span class="cmp-badge2 badge-p">無痛分娩</span></th>
+            <th><span class="cmp-badge2 badge-c">帝王切開</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>出産・入院費（目安）</td>
+            <td>35〜70万円</td>
+            <td>50〜90万円</td>
+            <td>45〜78万円</td>
+          </tr>
+          <tr>
+            <td>健康保険の適用</td>
+            <td>なし</td>
+            <td>なし</td>
+            <td>あり ✅</td>
+          </tr>
+          <tr>
+            <td>高額療養費制度</td>
+            <td>対象外</td>
+            <td>対象外</td>
+            <td>利用可 ✅</td>
+          </tr>
+          <tr>
+            <td>無痛麻酔の追加料金</td>
+            <td>なし</td>
+            <td>5〜15万円</td>
+            <td>なし</td>
+          </tr>
+          <tr>
+            <td><strong>実質自己負担（目安）</strong></td>
+            <td><span class="cmp-hl">約5〜20万円</span></td>
+            <td><span class="cmp-hl">約20〜40万円</span></td>
+            <td><span class="cmp-hl">約5〜25万円</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="text-align:center;font-size:.77rem;color:var(--text-sub);margin-top:12px;">※私立病院・マタニティ9ヶ月の場合の目安。実際の費用は医療機関・地域によって異なります。</p>
+    <div class="cmp-cta">
+      <a href="/pregnancy-cost-simulator/" class="btn-cta">あなたの費用を今すぐ計算 →<span class="btn-cta-sub">無料・会員登録不要</span></a>
     </div>
   </div>
 </section>
